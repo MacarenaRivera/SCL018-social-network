@@ -196,7 +196,7 @@ export const logOut = () => {
     });
 };
 
-// Función observador que nos sirve para autenticar al usuario y que pueda realizar post, etc.
+// Función observador que nos sirve para autenticar al usuario
 export const onAuth = () => {
   onAuthStateChanged(auth, (user) => {
     if (user != null && user.emailVerified === true) {
