@@ -228,7 +228,7 @@ export const addPost = async (inputTitle, inputReview) => {
     email: auth.currentUser.email,
     title: inputTitle,
     description: inputReview,
-    datepost: Date(Date.now()),
+    datepost: Date.now(),
     likes: [],
     likesCounter: 0,
   });
